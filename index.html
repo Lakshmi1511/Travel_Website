@@ -1,0 +1,369 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="./image/favicon.ico" type="image/png">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN"
+        crossorigin="anonymous"></script>
+    <script src="https://kit.fontawesome.com/8abd45fa7d.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="./css/styles.css">
+
+    <title>Responsive Website Travel</title>
+</head>
+
+<body>
+    <header class="header" id="header">
+        <nav class=" nav container navbar sticky-top navbar-expand-lg">
+            <div class="container-fluid me-2 ms-2">
+
+                <a href="#" class="nav__logo"><span
+                        style="color: rgb(243, 165, 20); font-size: 45px;">T</span>riplify</a>
+
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                    aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon" style="background-color: white;"></span>
+                </button>
+                <div class="collapse navbar-collapse justify-content-end" id="navbarSupportedContent">
+                    <ul class="nav__list navbar-nav nav-fill me-1 pb-2">
+                        <li class="nav__item">
+                            <a href="#home" class="nav__link active-link">Home</a>
+                        </li>
+                        <li class="nav__item">
+                            <a href="#about" class="nav__link">About</a>
+                        </li>
+                        <li class="nav__item">
+                            <a href="#discover" class="nav__link">Discover</a>
+                        </li>
+                        <li class="nav__item">
+                            <a href="#place" class="nav__link">Places</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <main class="main">
+        <!--==================== HOME ====================-->
+        <section class="home" id="home">
+            <img src="./image/beach-aerial-view.jpg" alt="" class="home__img">
+
+            <div class="home__container container grid">
+                <div class="home__data">
+                    <span class="home__data-subtitle">Discover your place</span>
+                    <h1 class="home__data-title">Explore The <br> Best <b>Beautiful <br> Places</b></h1>
+                    <a href="#" class="button">Explore</a>
+
+                </div>
+            </div>
+        </section>
+
+        <!--==================== ABOUT ====================-->
+        <section class="about section" id="about">
+            <div class="about__container container grid">
+                <div class="about__data">
+                    <h2 class="section__title about__title">More Information <br> About The Best Beaches</h2>
+                    <p class="about__description">You can find the most beautiful and pleasant places at the best
+                        prices with special discounts, you choose the place we will guide you all the way to wait, get
+                        your
+                        place now.
+                    </p>
+                    <a href="#" class="button">Reserve a place</a>
+                </div>
+
+                <div class="about__img">
+                    <div class="about__img-overlay">
+                        <img src="./image/about1.jpg" alt="" class="about__img-one">
+                    </div>
+
+                    <div class="about__img-overlay">
+                        <img src="./image/about2.jpg" alt="" class="about__img-two">
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!--==================== DISCOVER ====================-->
+        <section class="discover section" id="discover">
+            <h2 class="section__title">Discover the most <br> attractive places</h2>
+            <div id="carouselExampleCaptions" class="discover__container carousel slide">
+                <div class="carousel-indicators">
+                    <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active"
+                        aria-current="true" aria-label="Slide 1"></button>
+                    <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1"
+                        aria-label="Slide 2"></button>
+                </div>
+                <div class="carousel-inner">
+                    <div class="carousel-item active">
+                        <img src="./image/budapest.jpg" class="img1 d-block w-100" style="height: 357px;" alt="...">
+                        <div class="c1 carousel-caption d-md-block">
+                            <div class="discover__data">
+                                <h2 class="discover__title">Budapest</h2>
+                                <span class="discover__description">32 tours available</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <img src="./image/sweden.jpg" class="img1 d-block w-100" style="height: 357px;" alt="...">
+                        <div class="c1 carousel-caption d-md-block">
+                            <div class="discover__data">
+                                <h2 class="discover__title">Stockholm</h2>
+                                <span class="discover__description">24 tours available</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <img src="./image/london.jpg" class="img1 d-block w-100" style="height: 357px;" alt="...">
+                        <div class="c1 carousel-caption d-md-block">
+                            <div class="discover__data">
+                                <h2 class="discover__title">London</h2>
+                                <span class="discover__description">14 tours available</span>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+                <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions"
+                    data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Previous</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions"
+                    data-bs-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Next</span>
+                </button>
+            </div>
+        </section>
+        <!--==================== EXPERIENCE ====================-->
+        <section class="experience section">
+            <h2 class="section__title">With Our Experience <br> We Will Serve You</h2>
+
+            <div class="experience__container container grid">
+                <div class="experience__content grid">
+                    <div class="experience__data">
+                        <h2 class="experience__number">20</h2>
+                        <span class="experience__description">Year <br> Experience</span>
+                    </div>
+
+                    <div class="experience__data">
+                        <h2 class="experience__number">75</h2>
+                        <span class="experience__description">Complete <br> tours</span>
+                    </div>
+
+                    <div class="experience__data">
+                        <h2 class="experience__number">650+</h2>
+                        <span class="experience__description">Tourist <br> Destination</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!--==================== VIDEO ====================-->
+        <section class="video section">
+            <h2 class="section__title">Video Tour</h2>
+
+            <div class="video__container container">
+                <p class="video__description">Find out more with our video of the most beautiful and
+                    pleasant places for you and your family.
+                </p>
+
+                <div class="video__content">
+                    <video id="video-file" controls>
+                        <source src="./video/travel.mp4" type="video/mp4">
+                    </video>
+                </div>
+            </div>
+        </section>
+
+        <!--==================== PLACES ====================-->
+        <section class="place section" id="place">
+            <h2 class="section__title">Choose Your Place</h2>
+
+            <div class="place__container container grid">
+                <!--==================== PLACES CARD 1 ====================-->
+                <div class="place__card">
+                    <img src="./image/amsterdam.jpg" alt="" class="place__img">
+
+                    <div class="place__content">
+                        <span class="place__rating">
+                            <i class="fa-sharp fa-regular fa-star"></i>
+                            <span class="place__rating-number">4,8</span>
+                        </span>
+
+                        <div class="place__data">
+                            <h3 class="place__title">Netherlands</h3>
+                            <span class="place__subtitle">Amsterdam</span>
+                            <span class="place__price">$2400</span>
+                        </div>
+                    </div>
+
+                    <button class="button button--flex place__button">
+                        <i class="fa-sharp fa-solid fa-arrow-right"></i>
+                    </button>
+                </div>
+
+                <!--==================== PLACES CARD 2 ====================-->
+                <div class="place__card">
+                    <img src="./image/venice.jpg" alt="" class="place__img">
+
+                    <div class="place__content">
+                        <span class="place__rating">
+                            <i class="fa-sharp fa-regular fa-star"></i>
+                            <span class="place__rating-number">5,0</span>
+                        </span>
+
+                        <div class="place__data">
+                            <h3 class="place__title">Italy</h3>
+                            <span class="place__subtitle">Venice</span>
+                            <span class="place__price">$1599</span>
+                        </div>
+                    </div>
+
+                    <button class="button button--flex place__button">
+                        <i class="fa-sharp fa-solid fa-arrow-right"></i>
+                    </button>
+                </div>
+
+                <!--==================== PLACES CARD 3 ====================-->
+                <div class="place__card">
+                    <img src="./image/rivendell.jpg" alt="" class="place__img">
+
+                    <div class="place__content">
+                        <span class="place__rating">
+                            <i class="fa-sharp fa-regular fa-star"></i>
+                            <span class="place__rating-number">4,9</span>
+                        </span>
+
+                        <div class="place__data">
+                            <h3 class="place__title">New Zealand</h3>
+                            <span class="place__subtitle">Rivendell</span>
+                            <span class="place__price">$3499</span>
+                        </div>
+                    </div>
+
+                    <button class="button button--flex place__button">
+                        <i class="fa-sharp fa-solid fa-arrow-right"></i>
+                    </button>
+                </div>
+
+                <!--==================== PLACES CARD 4 ====================-->
+                <div class="place__card">
+                    <img src="./image/beach.jpg" alt="" class="place__img">
+
+                    <div class="place__content">
+                        <span class="place__rating">
+                            <i class="fa-sharp fa-regular fa-star"></i>
+                            <span class="place__rating-number">4,8</span>
+                        </span>
+
+                        <div class="place__data">
+                            <h3 class="place__title">Cortaia</h3>
+                            <span class="place__subtitle">Hu beach</span>
+                            <span class="place__price">$2499</span>
+                        </div>
+                    </div>
+
+                    <button class="button button--flex place__button">
+                        <i class="fa-sharp fa-solid fa-arrow-right"></i>
+                    </button>
+                </div>
+
+
+            </div>
+        </section>
+    </main>
+
+    <!--==================== FOOTER ====================-->
+    <footer class="footer section">
+        <div class="footer__container container grid">
+            <div class="footer__content grid">
+                <div class="footer__data">
+                    <h3 class="footer__title">Travel</h3>
+                    <p class="footer__description">Travel you choose the <br> destination,
+                        we offer you the <br> experience.
+                    </p>
+                    <div>
+                        <a href="https://www.facebook.com/" target="_blank" class="footer__social">
+                            <i class="ri-facebook-box-fill"></i>
+                        </a>
+                        <a href="https://twitter.com/" target="_blank" class="footer__social">
+                            <i class="ri-twitter-fill"></i>
+                        </a>
+                        <a href="https://www.instagram.com/" target="_blank" class="footer__social">
+                            <i class="ri-instagram-fill"></i>
+                        </a>
+                        <a href="https://www.youtube.com/" target="_blank" class="footer__social">
+                            <i class="ri-youtube-fill"></i>
+                        </a>
+                    </div>
+                </div>
+
+                <div class="footer__data">
+                    <h3 class="footer__subtitle">About</h3>
+                    <ul>
+                        <li class="footer__item">
+                            <a href="" class="footer__link">About Us</a>
+                        </li>
+                        <li class="footer__item">
+                            <a href="" class="footer__link">Features</a>
+                        </li>
+                        <li class="footer__item">
+                            <a href="" class="footer__link">New & Blog</a>
+                        </li>
+                    </ul>
+                </div>
+
+                <div class="footer__data">
+                    <h3 class="footer__subtitle">Company</h3>
+                    <ul>
+                        <li class="footer__item">
+                            <a href="" class="footer__link">Team</a>
+                        </li>
+                        <li class="footer__item">
+                            <a href="" class="footer__link">Plan y Pricing</a>
+                        </li>
+                        <li class="footer__item">
+                            <a href="" class="footer__link">Become a member</a>
+                        </li>
+                    </ul>
+                </div>
+
+                <div class="footer__data">
+                    <h3 class="footer__subtitle">Support</h3>
+                    <ul>
+                        <li class="footer__item">
+                            <a href="" class="footer__link">FAQs</a>
+                        </li>
+                        <li class="footer__item">
+                            <a href="" class="footer__link">Support Center</a>
+                        </li>
+                        <li class="footer__item">
+                            <a href="" class="footer__link">Contact Us</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="footer__rights">
+                <p class="footer__copy"> All rigths reserved.</p>
+                <div class="footer__terms">
+                    <a href="#" class="footer__terms-link">Terms & Agreements</a>
+                    <a href="#" class="footer__terms-link">Privacy Policy</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!--========== SCROLL UP ==========-->
+    <a href="#" class="scrollup" id="scroll-up">
+        <i class="ri-arrow-up-line scrollup__icon"></i>
+    </a>
+</body>
+
+</html>
