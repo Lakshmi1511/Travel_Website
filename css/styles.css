@@ -61,9 +61,9 @@ input {
 }
 
 /*=============== REUSABLE CSS CLASSES ===============*/
-/* .section {
+.section {
   padding: 4.5rem 0 2.5rem;
-} */
+}
 
 .section__title {
   font-size: 1.75rem;
@@ -584,7 +584,7 @@ input {
 
 /*=============== MEDIA QUERIES ===============*/
 /* For small devices */
-@media screen and (max-width: 340px) {
+@media screen and (min-width: 340px) {
   .place__container {
     grid-template-columns: max-content;
     justify-content: center;
